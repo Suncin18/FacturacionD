@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+<body>
+
+    <!-- Dashboard principal -->
+    <section class="sct_dashboard">
+        <div class="div_menu">
+            <h1>Bienvenido</h1>
+            <nav class="nav_dashboard">
+                <button id="nuevo-cliente" class="btn_color">Nuevo cliente</button>
+                <button>Cliente existente</button>
+                <button id="historial">Historial de facturas</button>
+                <button id="cambiar-contrasena">Cambiar contraseña</button>
+                <button id="cerrar-sesion">Cerrar sesión</button>
+            </nav>
+        </div>
+
+        <!-- NUEVO CLIENTE -->
+        <div id="div-nuevo-cliente">
+            <div class="form_container">
+                <div>
+                    <input type="text" id="nombre-cliente" placeholder="Nombre del cliente">
+                    <textarea name="" id="detalles-pago" cols="21" rows="8.9" placeholder="Detalles del pago"></textarea>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="Correo del cliente">
+                    <input type="number" id="cantidad-pagada" placeholder="Cantidad pagada">
+                    <div class="fecha">
+                        <label>Fecha de pago</label>
+                        <input type="date" id="fecha-pago">
+                    </div>
+                </div>
+            </div>
+            <div class="btn_container">
+                <button id="btn-enviar-recibo" type="button">Enviar recibo</button>
+            </div>
+        </div>
+
+        <!-- Historial de facturas -->
+        <section id="sct-historial">
+            <!-- <div class="historial_titulo">
+                <h2>Cliente</h2>
+                <h2>19/08/2021</h2>
+            </div>
+            <div class="historial_detalles">
+                <h2>$1,000</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolore vero aliquam odit porro natus facilis, expedita aspernatur veritatis, placeat iure voluptatibus! Eveniet dicta velit quibusdam rem iste labore atque.</p>
+            </div> -->
+        </section>
+
+        <!-- Cambiar contraseña -->
+        <section class="main_sct ocultar" id="sct-cambiar-contrasenna">
+            <h1>Cambiar contraseña</h1>
+            <form>
+                <input type="email" id="correo-cambiar" placeholder="Correo electrónico">
+                <input type="password" id="contrasenna" placeholder="Contraseña">
+                <input type="text" id="token" placeholder="Token">
+                <button id="btn-cambiar-contrasenna" type="button">Cambiar contraseña</button>
+                <button id="btn-token" type="button">Enviar código al correo</button>
+            </form>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/backend-general.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/resetPassword.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <section class="main_sct">
+        <h1>¡Bienvenido!</h1>
+        <form>
+            <input type="email" id="email" placeholder="Correo electrónico">
+            <input type="password" id="contrasenna" placeholder="Contraseña">
+            <button id="iniciar-sesion" type="button">Iniciar sesión</button>
+        </form>
+        <div class="link_container">
+            <a href="register.html">Registrar una cuenta nueva</a>
+            <a href="resetPassword.html">Olvidé mi contraseña</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/backend-general.js"></script>
+    <script src="js/iniciarSesion.js"></script>
+</body>
+</html>
